@@ -1,0 +1,50 @@
+project:
+  type: website
+
+website:
+  title: "Zoomalong"
+  navbar:
+    left:
+      # - href: index.qmd
+      #   text: Home
+      - about.qmd
+      - text: "Journal"
+        href: Journal/index.qmd
+
+    right:
+      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+        href: "mailto:Gary.newport@zoomalong.co.uk"
+      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
+        href: https://github.com/newportg
+        rel: me
+      - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
+        href: https://uk.linkedin.com/in/garynewport
+        rel: me
+  
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Gary Newport</span>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)</span>      
+    center: |
+      <span class="faux-block">{{< fa key >}} [PGP public key]({{< var pgp.key >}}) &emsp; {{< fa fingerprint >}} Fingerprint:</strong><br><span class="fingerprint">{{< var pgp.fingerprint >}}</span></span>
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub]({{< var github-url >}})</span>
+
+
+format:
+  html:
+    theme: 
+      - html/gmn.scss
+    grid: 
+      body-width: 900px
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+
+
+
