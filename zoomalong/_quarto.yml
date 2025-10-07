@@ -18,7 +18,6 @@ website:
     left:
       # - href: index.qmd
       #   text: Home
-      - about.qmd
       - text: "Journal"
         href: Journal/index.qmd
 

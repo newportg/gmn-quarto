@@ -1,9 +1,33 @@
 ---
-title: "Zoomalong"
+title: "Gary Newport"
+image: fingers.jpeg
+about:
+    template: jolla
+    image-shape: rectangle
+    image-width: 10em
+    links:
+        - text: Email
+          icon: envelope
+          href: mailto:gary.newport@zoomalong.co.uk
+        - text: GitHub
+          href: https://github.com/newportg
+        - text: LinkedIn
+          icon: linkedin
+          href: https://uk.linkedin.com/in/garynewport
+id: ppc
 ---
+
 
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
+
+:::{#ppc}
+I love dogs
+:::
+
+```{=html}
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="68222207-ca3a-4371-b16c-55b99c48ba68" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+```
 
