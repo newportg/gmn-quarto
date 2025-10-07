@@ -20,7 +20,7 @@ website:
       #   text: Home
       - text: "Journal"
         href: Journal/index.qmd
-
+        
     right:
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
         href: "mailto:Gary.newport@zoomalong.co.uk"

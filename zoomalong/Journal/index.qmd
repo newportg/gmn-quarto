@@ -1,15 +1,16 @@
 ---
 title: "Journal"
-author: ""
+author: "Gary Newport"
 description: ""
 listing:
   - id: posts
-    contents: "*"
+    # contents: "*.md"
     sort: "date desc"
     template: ../html/Journal/listing.ejs
+    categories: true
 page-layout: full
-toc-title: Year
-toc-location: right
+# toc-title: Year
+# toc-location: right
 date-format: "MMMM D, YYYY"
 code-tools: false
 comments: false
@@ -24,7 +25,7 @@ freeze: false
 ```
 
 
-## Posts
-
 :::{#posts}
 :::
+
+
