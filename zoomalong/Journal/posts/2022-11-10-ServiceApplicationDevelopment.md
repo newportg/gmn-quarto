@@ -1,8 +1,9 @@
 ﻿---
 title : Service Application Development
-Published: 2022/11/10
-Tags: Identity
-Category: Architecture
+categories: [Identity]
+image: /images/mi.png
+author: "Gary Newport"
+date: "2022-11-10"
 ---
 
 # Description

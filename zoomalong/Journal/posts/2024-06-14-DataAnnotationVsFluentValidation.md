@@ -1,10 +1,9 @@
 ---
 title: Data Annotation Vs FluentValidation
-Published: 2024/09/20
-Tags: 
-- C# 
-- Rules
-- Patterns
+categories: [C#, Rules, Patterns]
+image: /images/c#.png
+author: "Gary Newport"
+date: "2024-09-20"
 ---
 
 # Data Annotation 

@@ -1,10 +1,9 @@
 ﻿---
 title : SQL Change Tracking
-Published: 2023/01/20
-Tags: 
-- Azure Functions 
-- SQL
-Category: Architecture
+categories: [SQL]
+image: /images/sql.png
+author: "Gary Newport"
+date: "2023-01-20"
 ---
 
 # Description

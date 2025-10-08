@@ -1,8 +1,9 @@
 ---
 title : User Assigned Managed Identities
-Published: 2022/07/21
-Tags: Identity
-Category: Identity
+categories: [Identity]
+image: /images/mi.png
+author: "Gary Newport"
+date: "2022-07-21"
 ---
 
 # What

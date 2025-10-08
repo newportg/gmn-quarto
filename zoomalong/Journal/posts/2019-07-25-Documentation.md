@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Documentation
+categories: [Markdown, Documentation]
+image: /images/md.png
+author: "Gary Newport"
+date: "2019-07-25"
 ---
 
 Documentation is task that is best shared among all the relevant people, each supplying enough information that  satisfies there understanding of the issue.

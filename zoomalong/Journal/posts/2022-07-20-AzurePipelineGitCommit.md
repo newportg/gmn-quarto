@@ -1,7 +1,9 @@
 ﻿---
 title : Azure Pipeline Git Commit
-Published: 2022/07/20
-Tags: DevOps
+categories: [DevOps]
+image: /images/DevOps.png
+author: "Gary Newport"
+date: "2020-07-20"
 ---
 
 If you are trying to use git within a devops pipeline then you will need to enable the pipeline the bility to commit.

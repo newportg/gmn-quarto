@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Fluent Assertions
+categories: [Fluent Assertions]
+image: /images/c#.png
+author: "Gary Newport"
+date: "2019-07-16"
 ---
 
 Fluent Assertions is a helper library for testing that tries to add better context to your assertions.

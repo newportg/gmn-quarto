@@ -1,8 +1,9 @@
 ﻿---
 title : Event Notificiation
-Published: 2023/01/20
-Tags: Web
-Category: Architecture
+categories: [Event Grid]
+image: /images/EventGrid.png
+author: "Gary Newport"
+date: "2023-01-20"
 ---
 
 # Description

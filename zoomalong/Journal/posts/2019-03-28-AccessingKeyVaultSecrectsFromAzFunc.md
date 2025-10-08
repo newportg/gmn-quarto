@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Getting Secrets from KeyVault in Azure Functions
+categories: [Azure, Key Vault]
+image: /images/Key-Vaults.png
+author: "Gary Newport"
+date: "2019-03-28"
 ---
 
 KeyVault is a central resource where you should be storing all of your applications secrets/connection strings and config.

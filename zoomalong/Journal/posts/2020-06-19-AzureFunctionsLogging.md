@@ -1,7 +1,10 @@
 ---
+layout: post
 title: Azure Functions Logging
-Published: 2020/06/19
-Tags: Azure Functions
+categories: [C#, Azure Functions]
+image: /images/function-apps.png
+author: "Gary Newport"
+date: "2020-06-19"
 ---
 
 Azure Functions include a built in ILogger so you can fulfill all your logging needs,

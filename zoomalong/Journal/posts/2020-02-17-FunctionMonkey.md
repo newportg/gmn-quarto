@@ -1,7 +1,10 @@
 ---
+layout: post
 title: Function Monkey
-Published: 2020/02/17
-Tags: Azure Functions
+categories: [C#, Azure Functions]
+image: /images/function-apps.png
+author: "Gary Newport"
+date: "2020-02-17"
 ---
 
 # Function Monkey Hello World

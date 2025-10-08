@@ -1,7 +1,9 @@
 ﻿---
 title: Cast To a Reflected Type
-Published: 2023/09/05
-Tags: C#
+categories: [C#]
+image: /images/c#.png
+author: "Gary Newport"
+date: "2023-09-05"
 ---
 
 How many times do you find yourselves not knowing the type of a object, and wanting to cast it.

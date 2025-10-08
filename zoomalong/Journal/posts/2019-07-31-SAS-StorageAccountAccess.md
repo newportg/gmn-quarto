@@ -1,6 +1,10 @@
 ---
 layout: post
 title: SAS Storage Account Access
+categories: [Azure, Storage Account]
+image: /images/storage-accounts.png
+author: "Gary Newport"
+date: "2019-07-31"
 ---
 
 ## Best practices when using SAS

@@ -1,8 +1,9 @@
 ﻿---
 title : How to build Cloud components without any Azure Experience
-Published: 2023/05/11
-Tags: Architecture
-Category: Architecture
+categories: [Architecture]
+image: /images/Architecture.png
+author: "Gary Newport"
+date: "2023-05-01"
 ---
 
 # How to build Cloud components without any Azure Experience

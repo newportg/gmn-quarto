@@ -1,6 +1,10 @@
 ---
 layout: post
 title: GOF Mediator Pattern
+categories: [Patterns]
+image: /images/pattern.png
+author: "Gary Newport"
+date: "2019-05-22"
 ---
 
 ![GOF Mediator Class](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/newportg/newportg.github.io/master/assets/Mediatr/MediatorPatternCl.puml)

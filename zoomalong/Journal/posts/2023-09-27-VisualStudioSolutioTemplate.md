@@ -1,7 +1,9 @@
 ﻿---
 title: Visual Studio Solution Template
-Published: 2023/09/27
-Tags: C#
+categories: [C#]
+image: /images/c#.png
+author: "Gary Newport"
+date: "2023-09-27"
 ---
 * Create a new Solution 
 * Create your directory structure 

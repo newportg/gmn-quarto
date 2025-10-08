@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Azure Functions Dependency Injection
+categories: [Azure Functions]
+image: /images/Function-Apps.png
+author: "Gary Newport"
+date: "2019-07-16"
 ---
 
 Azure functions has always been missing the startup sequence enjoyed by other .net core applications.

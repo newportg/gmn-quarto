@@ -1,7 +1,10 @@
 ---
+layout: post
 title: Adaptive Cards
-Published: 2020/11/14
-Tags: AdaptiveCard
+categories: [Json, Adaptive Card]
+image: /images/json.png
+author: "Gary Newport"
+date: "2020-11-14"
 ---
 
 Adaptive Cards is a Json structure which describes how to display information in various Microsoft Applications.
