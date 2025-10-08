@@ -1,0 +1,15 @@
+{
+  "hash": "d268a4c97d110e74002ec5a3954a1b6f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nlayout: post\ntitle: Function Monkey\ncategories: [C#, Azure Functions]\n#image: /images/Function-Apps.png\nauthor: \"Gary Newport\"\ndate: \"2020-02-17\"\n---\n\n# Function Monkey Hello World\n\n![Puml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/newportg/newportg.github.io/master/assets/FunctionMonkey/FMHelloWorld.puml)\n\n```{=plantuml}\n@startuml Function Monkey\n\nskinparam linetype polyline\nskinparam linetype ortho\n\nclass HelloWorldCommandValidator {\n    + HelloWorldCommandValidator()\n}\nclass \"AbstractValidator`1\"<T> {\n}\n\"AbstractValidator`1\" \"<HelloWorldCommand>\" <|-- HelloWorldCommandValidator\n\nclass HelloWorldCommand {\n    + Name : string <<get>> <<set>>\n}\nclass \"ICommand`1\"<T> {\n}\n\"ICommand`1\" \"<string>\" <|-- HelloWorldCommand\n\nclass HelloWorldCommandHandler {\n    + HelloWorldCommandHandler(stringHasher:IStringHasher)\n    + ExecuteAsync(command:HelloWorldCommand, previousResult:string) : Task<string>\n}\nclass \"ICommandHandler`2\"<T1,T2> {\n}\n\"ICommandHandler`2\" \"<HelloWorldCommand,string>\" <|-- HelloWorldCommandHandler\nHelloWorldCommandHandler --> \"_stringHasher\" IStringHasher\n\n' Set screen position\n\"ICommand`1\" <- \"ICommandHandler`2\" : mediator\nHelloWorldCommand -> HelloWorldCommandHandler\nHelloWorldCommand -left> HelloWorldCommandValidator\n\ninterface IStringHasher {\n    Hash(value:string) : string\n}\n\nclass StringHasher {\n    + Hash(value:string) : string\n}\nIStringHasher <|-- StringHasher\n\nclass FunctionAppConfiguration {\n    + Build(builder:IFunctionHostBuilder) : void\n}\nIFunctionAppConfiguration <|-- FunctionAppConfiguration\n\n@enduml\n\n```\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(plantuml)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nThe package is by default using the online plantuml server\nat http://www.plantuml.com/plantuml/\nIf you want to use a different server or the local plantuml server,\nplease set the addresss and the port by e.g.\n\n   plantumlOptions(server_url = 'http://localhost/')\n   plantumlOptions(server_port = '8080')\n\nIf you are using the local plantuml server, you have to start it by\n\n   server_set(\"local\")\n   server_start()\n\nand stop it t the end using\n\n   stop_server()   server_set(\"local\")\n```\n\n\n:::\n\n```{.r .cell-code}\nx <- '\n(*) --> \"Initialization\"\n\nif \"Some Test\" then\n  -->[true] \"Some Activity\"\n  --> \"Another activity\"\n  -right-> (*)\nelse\n  ->[false] \"Something else\"\n  -->[Ending process] (*)\nendif\n'\nx <- plantuml( \n  x\n)\n```\n:::\n\n\n# References\n\n* [Function Monkey](https://functionmonkey.azurefromthetrenches.com/)\n* [Jason Roberts](http://dontcodetired.com/blog/post/Creating-Azure-Functions-with-Function-Monkey-First-Look)",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

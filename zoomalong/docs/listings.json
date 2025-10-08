@@ -44,5 +44,18 @@
       "/Journal/posts/2018-08-14-AzureApplicationHosting.html",
       "/Journal/posts/2018-08-14-Hosting AzureStaticWebsites.html"
     ]
+  },
+  {
+    "listing": "/Projects/index.html",
+    "items": [
+      "/Projects/posts/Frontify.html"
+    ]
+  },
+  {
+    "listing": "/Current/index.html",
+    "items": [
+      "/Current/todo.html",
+      "/Current/posts/2025-10-08.html"
+    ]
   }
 ]
