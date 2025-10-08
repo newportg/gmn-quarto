@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Fluent Assertions
-categories: [Fluent Assertions]
-image: /images/c#.png
+categories: [C#, Fluent Assertions]
+image: /images/csharp.png
 author: "Gary Newport"
 date: "2019-07-16"
 ---

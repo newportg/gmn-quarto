@@ -1,7 +1,7 @@
 ﻿---
 title: Cast To a Reflected Type
 categories: [C#]
-image: /images/c#.png
+image: /images/csharp.png
 author: "Gary Newport"
 date: "2023-09-05"
 ---

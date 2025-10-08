@@ -2,6 +2,7 @@
 layout: post
 title: Integration Testing Azure Functions
 categories: [Azure Functions, Testing]
+image: /images/function-apps.png
 author: "Gary Newport"
 date: "2025/05/01"
 ---

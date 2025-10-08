@@ -2,7 +2,7 @@
 layout: post
 title: GOF Mediator Pattern
 categories: [Patterns]
-image: /images/pattern.png
+image: /images/patterns.jpg
 author: "Gary Newport"
 date: "2019-05-22"
 ---

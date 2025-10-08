@@ -2,7 +2,7 @@
 layout: post
 title: Function Monkey
 categories: [C#, Azure Functions]
-image: /images/function-apps.png
+image: /images/Function-Apps.png
 author: "Gary Newport"
 date: "2020-02-17"
 ---

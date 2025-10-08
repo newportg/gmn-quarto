@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">KeyVault</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Azure</div>
-                <div class="quarto-category">KeyVault</div>
+                <div class="quarto-category">Key Vault</div>
               </div>
                   </div>
   </div>
@@ -312,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/newportg\.github\.io\/gmn-quarto\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

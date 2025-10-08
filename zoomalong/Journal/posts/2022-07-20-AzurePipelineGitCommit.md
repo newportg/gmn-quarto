@@ -1,7 +1,7 @@
 ﻿---
 title : Azure Pipeline Git Commit
 categories: [DevOps]
-image: /images/DevOps.png
+image: /images/devops.png
 author: "Gary Newport"
 date: "2020-07-20"
 ---
