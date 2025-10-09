@@ -1,0 +1,63 @@
+<!-- plantuml-encoder handles deflate+custom-base64 encoding for PlantUML server URLs -->
+<script src="https://cdn.jsdelivr.net/npm/plantuml-encoder@1.1.0/plantuml-encoder.min.js"></script>
+<script>
+// Robust client-side PlantUML renderer using deflate+encode to build server URLs.
+// Runs on DOMContentLoaded, window.load, and watches mutations. Marks processed blocks
+// to avoid double-processing.
+(function () {
+  function processPlantumlBlocks() {
+    if (typeof plantumlEncoder === 'undefined' || !plantumlEncoder.encode) {
+      console.warn('plantumlEncoder not available');
+      return false;
+    }
+    const blocks = document.querySelectorAll('pre.plantuml > code');
+    let found = false;
+    for (const codeEl of blocks) {
+      if (codeEl.dataset.__plantuml_processed) continue;
+      found = true;
+      try {
+        const text = codeEl.innerText;
+        const encoded = plantumlEncoder.encode(text);
+        const img = document.createElement('img');
+        img.src = 'https://www.plantuml.com/plantuml/svg/' + encoded;
+        img.alt = 'PlantUML diagram';
+        img.loading = 'lazy';
+        const pre = codeEl.parentElement;
+        codeEl.dataset.__plantuml_processed = '1';
+        pre.replaceWith(img);
+      } catch (err) {
+        console.warn('PlantUML encode/render failed:', err);
+      }
+    }
+    return found;
+  }
+
+  function scheduleProcess(retries = 8, delay = 300) {
+    if (processPlantumlBlocks()) return;
+    window.addEventListener('load', () => processPlantumlBlocks());
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if (processPlantumlBlocks() || attempts >= retries) {
+        clearInterval(interval);
+      }
+    }, delay);
+
+    const observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.addedNodes && m.addedNodes.length) {
+          processPlantumlBlocks();
+          break;
+        }
+      }
+    });
+    observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => scheduleProcess());
+  } else {
+    scheduleProcess();
+  }
+})();
+</script>

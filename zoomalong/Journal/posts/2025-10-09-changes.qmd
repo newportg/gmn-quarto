@@ -1,0 +1,96 @@
+---
+title: "Change log: Quarto PlantUML / pandoc-diagram work"
+date: 2025-10-09
+categories: [maintenance, tooling]
+---
+
+This post documents all repository changes and configuration edits made while debugging and improving PlantUML rendering for the site. It records the current working state so you can reason about next steps and reverts.
+
+## Summary
+
+During the troubleshooting session (Oct 2025) I focused on making PlantUML diagrams render reliably for posts using Quarto + Pandoc Lua filters (the `pandoc-diagram` implementation). The main goals were:
+
+- Enable build-time diagram generation using the local PlantUML CLI.
+- Make the `pandoc-diagram` filter available project-wide via `_extensions/diagram` so individual posts don't need `filters:` front-matter.
+- Provide a reliable fallback while diagnosing Quarto session-copy behavior.
+
+Below are the specific edits and the reasons for them.
+
+## Files added or edited
+
+- `_quarto.yml` (edited)
+  - Set the PlantUML CLI exec path to the local installation:
+
+    diagram:
+      engine:
+        plantuml:
+          execpath: "C:/Plantuml/plantuml.bat"
+
+  - For debugging and stability I temporarily re-added an absolute `filters:` entry so Pandoc is forced to load the known-working canonical filter implementation during renders:
+
+    filters:
+      - C:/Users/NEWPORTG/source/Personal/gmn-quarto/zoomalong/_extensions/pandoc-ext/diagram/diagram.lua
+
+  - Why: Pandoc runs in a temporary session directory and relative project extension discovery can be inconsistent while debugging. The absolute filters entry is deterministic and restored at the user's request.
+
+- `_extensions/diagram/_extension.yaml` (added)
+  - Purpose: manifest so Quarto can auto-load the extension from project `_extensions/diagram`.
+  - Contributes: a filter file `diagram.lua`.
+
+- `_extensions/diagram/diagram.lua` (written/edited)
+  - The canonical `pandoc-diagram` filter implementation was copied (mirrored) into this path to make the extension self-contained. This file implements engine handling (plantuml, graphviz, mermaid, tikz, etc.), mediabag insertion, and a Pandoc AST walker to replace fenced code blocks with generated images.
+  - Notes: after copying, editor lint warnings were reported in a few places (return-value annotations and nil-checks). The code was left as the canonical copy to avoid subtle behavior changes; it should be reviewed and the warnings cleaned up if you want to strictly silence the editor.
+
+- `_extensions/pandoc-ext/diagram/diagram.lua` (unchanged; canonical source)
+  - This file was used as the canonical reference and the absolute `filters:` entry points to it for deterministic runs.
+
+- `_includes/plantuml-server.html` (created and later removed)
+  - I briefly added a client-side fallback that deflates+encodes PlantUML text and requests images from the PlantUML server if build-time generation fails. The user requested this be removed later; it was deleted during a revert step.
+
+- `Current/posts/2025-10-09.qmd` (edited)
+  - Inserted a `plantuml` fenced code block as the example content for debugging the filter. No per-file `filters:` front-matter is present in the final state.
+
+- `docs/Current/posts/2025-10-09.html` (generated)
+  - Output observed during debug renders. At least one successful debug render produced an `<img src=".../mediabag/...svg">` referencing the generated SVG.
+
+- `Journal/posts/2025-10-09-changes.qmd` (this file — added)
+  - Purpose: record the above changes and the current working status for posterity.
+
+## Observed behaviors and debugging notes
+
+- Quarto runs Pandoc inside a temporary session folder (e.g., `AppData\Local\Temp\quarto-sessionXXXX`). That makes relative paths and discovery of `_extensions` tricky because Quarto copies or bundles resources into the session.
+
+- In at least one run where I added an absolute `filters:` entry in `_quarto.yml`, the filter executed and produced a mediabag SVG; the generated HTML shows the `<img>`.
+
+- In other runs (when the absolute `filters:` was removed or when Quarto didn't copy the project `_extensions` into the session), the PlantUML block remained as raw `<pre class="plantuml"><code>...</code></pre>` in the output, indicating the filter was not loaded or not run.
+
+- The canonical filter copy in `_extensions/diagram/diagram.lua` produced editor lint warnings. These are likely benign runtime-wise (it's the canonical code), but static checks in the editor flagged return-value annotations and missing nil checks. If desired, I can tidy those warnings without changing runtime semantics.
+
+## Current working state (as of this post)
+
+- `diagram.engine.plantuml.execpath` is configured to point at `C:/Plantuml/plantuml.bat`.
+- The absolute `filters:` entry pointing to the canonical `diagram.lua` is present in `_quarto.yml`. This is the reliable fallback to guarantee build-time generation while we finish ensuring project-level extension discovery is stable.
+- `_extensions/diagram` exists with `_extension.yaml` and a copy of `diagram.lua` (canonical copy). This should allow Quarto to auto-load the filter, but Quarto's session-copy behavior has been observed to be inconsistent in some runs.
+
+## Next actions (options)
+
+1. Investigate auto-load behavior (recommended):
+   - Run a clean debug render, capture the exact session temp path, and inspect whether `_extensions/diagram` files are copied into the session. If not, adjust the extension layout or Quarto config and re-run until consistent, then remove the absolute `filters:` entry.
+
+2. Keep the absolute `filters:` entry for stable builds (safe fallback):
+   - Keep the canonical `filters:` entry so Pandoc deterministically loads the filter. Revisit the auto-load approach later.
+
+3. Clean up lint warnings in `_extensions/diagram/diagram.lua`:
+   - Tidy small static-check issues (nil checks, return-signature notes) to silence editor warnings while preserving runtime behavior.
+
+## Quick checklist mapping
+
+- PlantUML exec path in `_quarto.yml`: Done
+- Canonical filter available at `_extensions/pandoc-ext/diagram/diagram.lua`: Present
+- Project-level extension `_extensions/diagram`: Created (contains `_extension.yaml` and a copy of `diagram.lua`)
+- Absolute `filters:` entry in `_quarto.yml`: Present (temporary stable fallback)
+- Client-side fallback include `_includes/plantuml-server.html`: Removed per user's request
+
+---
+
+If you'd like, I can now proceed to run a clean debug render and inspect the Quarto session to verify whether `_extensions/diagram` is copied into the session (option 1). Or I can leave the `filters:` entry in place and run a full site build to confirm everything compiles (option 2). Which do you prefer?

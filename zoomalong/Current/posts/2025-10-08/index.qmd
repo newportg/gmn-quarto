@@ -1,4 +1,7 @@
 ---
+foam_template:
+  filepath: "/current/posts/2025-10-08/index.qmd"
+  description: "Daily note"
 layout: post
 title: Daily Note
 categories: [Daily Note]

@@ -78,10 +78,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-freeze','listing-execute','listing-author','listing-layout','listing-title','listing-image','listing-categories','listing-date','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-diagram','listing-filters','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-freeze','listing-execute','listing-author','listing-layout','listing-title','listing-image','listing-categories','listing-date','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-freeze","listing-execute","listing-author","listing-layout","listing-title","listing-image","listing-categories","listing-date","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-diagram","listing-filters","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-freeze","listing-execute","listing-author","listing-layout","listing-title","listing-image","listing-categories","listing-date","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -204,7 +204,7 @@ window.Quarto = {
   <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(41)</span></div><div class="category" data-category="QWRhcHRpdmUlMjBDYXJk">Adaptive Card <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXJjaGl0ZWN0dXJl">Architecture <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QXJtJTIwVGVtcGxhdGVz">Arm Templates <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXp1cmU=">Azure <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QXp1cmUlMjBGdW5jdGlvbnM=">Azure Functions <span class="quarto-category-count">(4)</span></div><div class="category" data-category="QmFzZTY0">Base64 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QyUyMw==">C# <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QzQ=">C4 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGV2T3Bz">DevOps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlhYmV0ZXM=">Diabetes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9jdW1lbnRhdGlvbg==">Documentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXZlbnQlMjBHcmlk">Event Grid <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rmx1ZW50JTIwQXNzZXJ0aW9ucw==">Fluent Assertions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SG9zdGluZw==">Hosting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SWRlbnRpdHk=">Identity <span class="quarto-category-count">(3)</span></div><div class="category" data-category="SWZyYW1lcw==">Iframes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SnNvbg==">Json <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S2V5JTIwVmF1bHQ=">Key Vault <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TWFuYWdlZCUyMFNlcnZpY2UlMjBJZGVudGl0aWVz">Managed Service Identities <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2Rvd24=">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T2ZmaWNl">Office <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGF0dGVybnM=">Patterns <span class="quarto-category-count">(7)</span></div><div class="category" data-category="UGxhbnRVbWw=">PlantUml <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UnVsZXM=">Rules <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U2VjdWlydHk=">Secuirty <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VjdXJpdHk=">Security <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U1FM">SQL <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGljJTIwV2Vic2l0ZXM=">Static Websites <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RvcmFnZSUyMEFjY291bnQ=">Storage Account <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RvcmFnZSUyMEFjY291bnRz">Storage Accounts <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VGVzdGluZw==">Testing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V09QSQ==">WOPI <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(42)</span></div><div class="category" data-category="QWRhcHRpdmUlMjBDYXJk">Adaptive Card <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXJjaGl0ZWN0dXJl">Architecture <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QXJtJTIwVGVtcGxhdGVz">Arm Templates <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXp1cmU=">Azure <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QXp1cmUlMjBGdW5jdGlvbnM=">Azure Functions <span class="quarto-category-count">(4)</span></div><div class="category" data-category="QmFzZTY0">Base64 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QyUyMw==">C# <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QzQ=">C4 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGV2T3Bz">DevOps <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGlhYmV0ZXM=">Diabetes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9jdW1lbnRhdGlvbg==">Documentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RXZlbnQlMjBHcmlk">Event Grid <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rmx1ZW50JTIwQXNzZXJ0aW9ucw==">Fluent Assertions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SG9zdGluZw==">Hosting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SWRlbnRpdHk=">Identity <span class="quarto-category-count">(3)</span></div><div class="category" data-category="SWZyYW1lcw==">Iframes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SnNvbg==">Json <span class="quarto-category-count">(1)</span></div><div class="category" data-category="S2V5JTIwVmF1bHQ=">Key Vault <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bWFpbnRlbmFuY2U=">maintenance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFuYWdlZCUyMFNlcnZpY2UlMjBJZGVudGl0aWVz">Managed Service Identities <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFya2Rvd24=">Markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T2ZmaWNl">Office <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGF0dGVybnM=">Patterns <span class="quarto-category-count">(7)</span></div><div class="category" data-category="UGxhbnRVbWw=">PlantUml <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UnVsZXM=">Rules <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U2VjdWlydHk=">Secuirty <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U2VjdXJpdHk=">Security <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U1FM">SQL <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGljJTIwV2Vic2l0ZXM=">Static Websites <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RvcmFnZSUyMEFjY291bnQ=">Storage Account <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RvcmFnZSUyMEFjY291bnRz">Storage Accounts <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VGVzdGluZw==">Testing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dG9vbGluZw==">tooling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V09QSQ==">WOPI <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content"><div class="cell">
 <style type="text/css">
@@ -216,7 +216,34 @@ window.Quarto = {
 <div id="listing-posts" class="quarto-listing quarto-listing-container-custom">
 <div class="list blog">
     
-    <div class="blog-entry" data-index="0" data-categories="RGlhYmV0ZXM=" data-listing-date-sort="1758841200000" data-listing-file-modified-sort="1759851979820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
+    <div class="blog-entry" data-index="0" data-categories="bWFpbnRlbmFuY2UlMkN0b29saW5n" data-listing-date-sort="1759964400000" data-listing-file-modified-sort="1760026841447" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="893">
+        <div class="metadata">          
+            <p class="date listing-date">October 9, 2025</p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="../Journal/posts/2025-10-09-changes.html">Change log: Quarto PlantUML / pandoc-diagram work</a></p>
+
+            
+            <div class="post-categories listing-categories">
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('maintenance'); return false;">
+                    maintenance
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('tooling'); return false;">
+                    tooling
+                </div>
+                
+            </div>
+            
+
+            <p class="description listing-description">This post documents all repository changes and configuration edits made while debugging and improving PlantUML rendering for the site. It records the current working state…</p>
+            
+        </div>
+        
+    </div>
+    
+    <div class="blog-entry" data-index="1" data-categories="RGlhYmV0ZXM=" data-listing-date-sort="1758841200000" data-listing-file-modified-sort="1759851979820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
         <div class="metadata">          
             <p class="date listing-date">September 26, 2025</p>
         </div>
@@ -239,7 +266,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="1" data-categories="QXp1cmUlMjBGdW5jdGlvbnMlMkNUZXN0aW5n" data-listing-date-sort="1746054000000" data-listing-file-modified-sort="1759920520213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1350">
+    <div class="blog-entry" data-index="2" data-categories="QXp1cmUlMjBGdW5jdGlvbnMlMkNUZXN0aW5n" data-listing-date-sort="1746054000000" data-listing-file-modified-sort="1759920520213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1350">
         <div class="metadata">          
             <p class="date listing-date">May 1, 2025</p>
         </div>
@@ -270,7 +297,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="2" data-categories="QyUyMyUyQ1J1bGVzJTJDUGF0dGVybnM=" data-listing-date-sort="1726786800000" data-listing-file-modified-sort="1759920017641" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
+    <div class="blog-entry" data-index="3" data-categories="QyUyMyUyQ1J1bGVzJTJDUGF0dGVybnM=" data-listing-date-sort="1726786800000" data-listing-file-modified-sort="1759920017641" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
         <div class="metadata">          
             <p class="date listing-date">September 20, 2024</p>
         </div>
@@ -305,7 +332,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="3" data-categories="UGF0dGVybnMlMkNDJTIz" data-listing-date-sort="1718319600000" data-listing-file-modified-sort="1759851979819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="159">
+    <div class="blog-entry" data-index="4" data-categories="UGF0dGVybnMlMkNDJTIz" data-listing-date-sort="1718319600000" data-listing-file-modified-sort="1759851979819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="159">
         <div class="metadata">          
             <p class="date listing-date">June 14, 2024</p>
         </div>
@@ -332,7 +359,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="4" data-categories="QyUyMw==" data-listing-date-sort="1695769200000" data-listing-file-modified-sort="1759919687378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
+    <div class="blog-entry" data-index="5" data-categories="QyUyMw==" data-listing-date-sort="1695769200000" data-listing-file-modified-sort="1759919687378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="472">
         <div class="metadata">          
             <p class="date listing-date">September 27, 2023</p>
         </div>
@@ -359,7 +386,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="5" data-categories="QyUyMw==" data-listing-date-sort="1693868400000" data-listing-file-modified-sort="1759920035061" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
+    <div class="blog-entry" data-index="6" data-categories="QyUyMw==" data-listing-date-sort="1693868400000" data-listing-file-modified-sort="1759920035061" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
         <div class="metadata">          
             <p class="date listing-date">September 5, 2023</p>
         </div>
@@ -386,7 +413,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="6" data-categories="QXJjaGl0ZWN0dXJl" data-listing-date-sort="1687388400000" data-listing-file-modified-sort="1759918969123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1144">
+    <div class="blog-entry" data-index="7" data-categories="QXJjaGl0ZWN0dXJl" data-listing-date-sort="1687388400000" data-listing-file-modified-sort="1759918969123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1144">
         <div class="metadata">          
             <p class="date listing-date">June 22, 2023</p>
         </div>
@@ -413,7 +440,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="7" data-categories="QXJjaGl0ZWN0dXJl" data-listing-date-sort="1682895600000" data-listing-file-modified-sort="1759918771157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+    <div class="blog-entry" data-index="8" data-categories="QXJjaGl0ZWN0dXJl" data-listing-date-sort="1682895600000" data-listing-file-modified-sort="1759918771157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
         <div class="metadata">          
             <p class="date listing-date">May 1, 2023</p>
         </div>
@@ -440,7 +467,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="8" data-categories="U1FM" data-listing-date-sort="1674172800000" data-listing-file-modified-sort="1759918771158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
+    <div class="blog-entry" data-index="9" data-categories="U1FM" data-listing-date-sort="1674172800000" data-listing-file-modified-sort="1759918771158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
         <div class="metadata">          
             <p class="date listing-date">January 20, 2023</p>
         </div>
@@ -467,7 +494,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="9" data-categories="RXZlbnQlMjBHcmlk" data-listing-date-sort="1674172800000" data-listing-file-modified-sort="1759918771157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1865">
+    <div class="blog-entry" data-index="10" data-categories="RXZlbnQlMjBHcmlk" data-listing-date-sort="1674172800000" data-listing-file-modified-sort="1759918771157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1865">
         <div class="metadata">          
             <p class="date listing-date">January 20, 2023</p>
         </div>
@@ -494,7 +521,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="10" data-categories="SWRlbnRpdHk=" data-listing-date-sort="1674086400000" data-listing-file-modified-sort="1759918771158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
+    <div class="blog-entry" data-index="11" data-categories="SWRlbnRpdHk=" data-listing-date-sort="1674086400000" data-listing-file-modified-sort="1759918771158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="293">
         <div class="metadata">          
             <p class="date listing-date">January 19, 2023</p>
         </div>
@@ -521,7 +548,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="11" data-categories="SWRlbnRpdHk=" data-listing-date-sort="1668038400000" data-listing-file-modified-sort="1759918771159" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="205">
+    <div class="blog-entry" data-index="12" data-categories="SWRlbnRpdHk=" data-listing-date-sort="1668038400000" data-listing-file-modified-sort="1759918771159" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="205">
         <div class="metadata">          
             <p class="date listing-date">November 10, 2022</p>
         </div>
@@ -548,7 +575,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="12" data-categories="SWRlbnRpdHk=" data-listing-date-sort="1658358000000" data-listing-file-modified-sort="1759918213699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1264">
+    <div class="blog-entry" data-index="13" data-categories="SWRlbnRpdHk=" data-listing-date-sort="1658358000000" data-listing-file-modified-sort="1759918213699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1264">
         <div class="metadata">          
             <p class="date listing-date">July 21, 2022</p>
         </div>
@@ -575,7 +602,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="13" data-categories="SnNvbiUyQ0FkYXB0aXZlJTIwQ2FyZA==" data-listing-date-sort="1605312000000" data-listing-file-modified-sort="1759918213699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2677">
+    <div class="blog-entry" data-index="14" data-categories="SnNvbiUyQ0FkYXB0aXZlJTIwQ2FyZA==" data-listing-date-sort="1605312000000" data-listing-file-modified-sort="1759918213699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2677">
         <div class="metadata">          
             <p class="date listing-date">November 14, 2020</p>
         </div>
@@ -606,7 +633,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="14" data-categories="RGV2T3Bz" data-listing-date-sort="1595199600000" data-listing-file-modified-sort="1759919612134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
+    <div class="blog-entry" data-index="15" data-categories="RGV2T3Bz" data-listing-date-sort="1595199600000" data-listing-file-modified-sort="1759919612134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="35">
         <div class="metadata">          
             <p class="date listing-date">July 20, 2020</p>
         </div>
@@ -633,7 +660,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="15" data-categories="QyUyMyUyQ0F6dXJlJTIwRnVuY3Rpb25z" data-listing-date-sort="1592521200000" data-listing-file-modified-sort="1759918213699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+    <div class="blog-entry" data-index="16" data-categories="QyUyMyUyQ0F6dXJlJTIwRnVuY3Rpb25z" data-listing-date-sort="1592521200000" data-listing-file-modified-sort="1759918213699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
         <div class="metadata">          
             <p class="date listing-date">June 19, 2020</p>
         </div>
@@ -664,7 +691,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="16" data-categories="QyUyMyUyQ0F6dXJlJTIwRnVuY3Rpb25z" data-listing-date-sort="1581897600000" data-listing-file-modified-sort="1759936177101" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
+    <div class="blog-entry" data-index="17" data-categories="QyUyMyUyQ0F6dXJlJTIwRnVuY3Rpb25z" data-listing-date-sort="1581897600000" data-listing-file-modified-sort="1760001208304" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="6">
         <div class="metadata">          
             <p class="date listing-date">February 17, 2020</p>
         </div>
@@ -699,7 +726,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="17" data-categories="QyUyMyUyQ1J1bGVz" data-listing-date-sort="1578528000000" data-listing-file-modified-sort="1759919839931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="857">
+    <div class="blog-entry" data-index="18" data-categories="QyUyMyUyQ1J1bGVz" data-listing-date-sort="1578528000000" data-listing-file-modified-sort="1759919839931" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="857">
         <div class="metadata">          
             <p class="date listing-date">January 9, 2020</p>
         </div>
@@ -730,7 +757,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="18" data-categories="U1FM" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1759918213689" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5125">
+    <div class="blog-entry" data-index="19" data-categories="U1FM" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1759918213689" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5125">
         <div class="metadata">          
             <p class="date listing-date">December 1, 2019</p>
         </div>
@@ -757,7 +784,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="19" data-categories="UGF0dGVybnM=" data-listing-date-sort="1571180400000" data-listing-file-modified-sort="1759919373062" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="344">
+    <div class="blog-entry" data-index="20" data-categories="UGF0dGVybnM=" data-listing-date-sort="1571180400000" data-listing-file-modified-sort="1759919373062" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="344">
         <div class="metadata">          
             <p class="date listing-date">October 16, 2019</p>
         </div>
@@ -784,7 +811,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="20" data-categories="UGF0dGVybnM=" data-listing-date-sort="1565218800000" data-listing-file-modified-sort="1759917605902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
+    <div class="blog-entry" data-index="21" data-categories="UGF0dGVybnM=" data-listing-date-sort="1565218800000" data-listing-file-modified-sort="1759917605902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="3">
         <div class="metadata">          
             <p class="date listing-date">August 8, 2019</p>
         </div>
@@ -816,7 +843,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="21" data-categories="UGF0dGVybnM=" data-listing-date-sort="1565218800000" data-listing-file-modified-sort="1759919875631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
+    <div class="blog-entry" data-index="22" data-categories="UGF0dGVybnM=" data-listing-date-sort="1565218800000" data-listing-file-modified-sort="1759919875631" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
         <div class="metadata">          
             <p class="date listing-date">August 8, 2019</p>
         </div>
@@ -843,7 +870,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="22" data-categories="QXp1cmUlMkNTdG9yYWdlJTIwQWNjb3VudA==" data-listing-date-sort="1564527600000" data-listing-file-modified-sort="1759917605905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1007">
+    <div class="blog-entry" data-index="23" data-categories="QXp1cmUlMkNTdG9yYWdlJTIwQWNjb3VudA==" data-listing-date-sort="1564527600000" data-listing-file-modified-sort="1759917605905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1007">
         <div class="metadata">          
             <p class="date listing-date">July 31, 2019</p>
         </div>
@@ -874,7 +901,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="23" data-categories="TWFya2Rvd24lMkNEb2N1bWVudGF0aW9u" data-listing-date-sort="1564009200000" data-listing-file-modified-sort="1759917605905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+    <div class="blog-entry" data-index="24" data-categories="TWFya2Rvd24lMkNEb2N1bWVudGF0aW9u" data-listing-date-sort="1564009200000" data-listing-file-modified-sort="1759917605905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
         <div class="metadata">          
             <p class="date listing-date">July 25, 2019</p>
         </div>
@@ -905,7 +932,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="24" data-categories="QyUyMyUyQ1BhdHRlcm5z" data-listing-date-sort="1563750000000" data-listing-file-modified-sort="1759919901505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+    <div class="blog-entry" data-index="25" data-categories="QyUyMyUyQ1BhdHRlcm5z" data-listing-date-sort="1563750000000" data-listing-file-modified-sort="1759919901505" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
         <div class="metadata">          
             <p class="date listing-date">July 22, 2019</p>
         </div>
@@ -936,7 +963,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="25" data-categories="QXp1cmUlMjBGdW5jdGlvbnM=" data-listing-date-sort="1563231600000" data-listing-file-modified-sort="1759917605905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+    <div class="blog-entry" data-index="26" data-categories="QXp1cmUlMjBGdW5jdGlvbnM=" data-listing-date-sort="1563231600000" data-listing-file-modified-sort="1759917605905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
         <div class="metadata">          
             <p class="date listing-date">July 16, 2019</p>
         </div>
@@ -963,7 +990,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="26" data-categories="QyUyMyUyQ0ZsdWVudCUyMEFzc2VydGlvbnM=" data-listing-date-sort="1563231600000" data-listing-file-modified-sort="1759919928409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
+    <div class="blog-entry" data-index="27" data-categories="QyUyMyUyQ0ZsdWVudCUyMEFzc2VydGlvbnM=" data-listing-date-sort="1563231600000" data-listing-file-modified-sort="1759919928409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
         <div class="metadata">          
             <p class="date listing-date">July 16, 2019</p>
         </div>
@@ -994,7 +1021,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="27" data-categories="QyUyMyUyQ0lmcmFtZXM=" data-listing-date-sort="1563231600000" data-listing-file-modified-sort="1759919940763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
+    <div class="blog-entry" data-index="28" data-categories="QyUyMyUyQ0lmcmFtZXM=" data-listing-date-sort="1563231600000" data-listing-file-modified-sort="1759919940763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
         <div class="metadata">          
             <p class="date listing-date">July 16, 2019</p>
         </div>
@@ -1025,7 +1052,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="28" data-categories="UGF0dGVybnM=" data-listing-date-sort="1558479600000" data-listing-file-modified-sort="1759919961340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+    <div class="blog-entry" data-index="29" data-categories="UGF0dGVybnM=" data-listing-date-sort="1558479600000" data-listing-file-modified-sort="1759919961340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
         <div class="metadata">          
             <p class="date listing-date">May 22, 2019</p>
         </div>
@@ -1052,7 +1079,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="29" data-categories="QXp1cmUlMkNLZXklMjBWYXVsdA==" data-listing-date-sort="1553731200000" data-listing-file-modified-sort="1759917605915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2407">
+    <div class="blog-entry" data-index="30" data-categories="QXp1cmUlMkNLZXklMjBWYXVsdA==" data-listing-date-sort="1553731200000" data-listing-file-modified-sort="1759917605915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-word-count-sort="2407">
         <div class="metadata">          
             <p class="date listing-date">March 28, 2019</p>
         </div>
@@ -1083,7 +1110,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="30" data-categories="QXp1cmUlMkNTdG9yYWdlJTIwQWNjb3VudHM=" data-listing-date-sort="1551657600000" data-listing-file-modified-sort="1759851095442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
+    <div class="blog-entry" data-index="31" data-categories="QXp1cmUlMkNTdG9yYWdlJTIwQWNjb3VudHM=" data-listing-date-sort="1551657600000" data-listing-file-modified-sort="1759851095442" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
         <div class="metadata">          
             <p class="date listing-date">March 4, 2019</p>
         </div>
@@ -1114,7 +1141,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="31" data-categories="QXp1cmUlMkNTdG9yYWdlJTIwQWNjb3VudHM=" data-listing-date-sort="1550188800000" data-listing-file-modified-sort="1759481441941" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="790">
+    <div class="blog-entry" data-index="32" data-categories="QXp1cmUlMkNTdG9yYWdlJTIwQWNjb3VudHM=" data-listing-date-sort="1550188800000" data-listing-file-modified-sort="1759481441941" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="790">
         <div class="metadata">          
             <p class="date listing-date">February 15, 2019</p>
         </div>
@@ -1145,7 +1172,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="32" data-categories="U2VjdWlydHklMkNCYXNlNjQ=" data-listing-date-sort="1549929600000" data-listing-file-modified-sort="1759481250206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
+    <div class="blog-entry" data-index="33" data-categories="U2VjdWlydHklMkNCYXNlNjQ=" data-listing-date-sort="1549929600000" data-listing-file-modified-sort="1759481250206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
         <div class="metadata">          
             <p class="date listing-date">February 12, 2019</p>
         </div>
@@ -1176,7 +1203,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="33" data-categories="QXp1cmUlMkNDNA==" data-listing-date-sort="1549843200000" data-listing-file-modified-sort="1759481250210" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
+    <div class="blog-entry" data-index="34" data-categories="QXp1cmUlMkNDNA==" data-listing-date-sort="1549843200000" data-listing-file-modified-sort="1759481250210" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="34">
         <div class="metadata">          
             <p class="date listing-date">February 11, 2019</p>
         </div>
@@ -1207,7 +1234,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="34" data-categories="QXp1cmUlMkNLZXklMjBWYXVsdA==" data-listing-date-sort="1549843200000" data-listing-file-modified-sort="1759919112108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="625">
+    <div class="blog-entry" data-index="35" data-categories="QXp1cmUlMkNLZXklMjBWYXVsdA==" data-listing-date-sort="1549843200000" data-listing-file-modified-sort="1759919112108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="625">
         <div class="metadata">          
             <p class="date listing-date">February 11, 2019</p>
         </div>
@@ -1238,7 +1265,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="35" data-categories="T2ZmaWNlJTJDV09QSQ==" data-listing-date-sort="1549843200000" data-listing-file-modified-sort="1759481250206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
+    <div class="blog-entry" data-index="36" data-categories="T2ZmaWNlJTJDV09QSQ==" data-listing-date-sort="1549843200000" data-listing-file-modified-sort="1759481250206" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="15">
         <div class="metadata">          
             <p class="date listing-date">February 11, 2019</p>
         </div>
@@ -1269,7 +1296,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="36" data-categories="UGxhbnRVbWw=" data-listing-date-sort="1549584000000" data-listing-file-modified-sort="1759480806468" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
+    <div class="blog-entry" data-index="37" data-categories="UGxhbnRVbWw=" data-listing-date-sort="1549584000000" data-listing-file-modified-sort="1759480806468" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
         <div class="metadata">          
             <p class="date listing-date">February 8, 2019</p>
         </div>
@@ -1296,7 +1323,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="37" data-categories="QXp1cmUlMkNBcm0lMjBUZW1wbGF0ZXM=" data-listing-date-sort="1539558000000" data-listing-file-modified-sort="1759850566606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="329">
+    <div class="blog-entry" data-index="38" data-categories="QXp1cmUlMkNBcm0lMjBUZW1wbGF0ZXM=" data-listing-date-sort="1539558000000" data-listing-file-modified-sort="1759850566606" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="329">
         <div class="metadata">          
             <p class="date listing-date">October 15, 2018</p>
         </div>
@@ -1327,7 +1354,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="38" data-categories="QXp1cmUlMkNTZWN1cml0eSUyQ01hbmFnZWQlMjBTZXJ2aWNlJTIwSWRlbnRpdGllcw==" data-listing-date-sort="1539558000000" data-listing-file-modified-sort="1759835491757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
+    <div class="blog-entry" data-index="39" data-categories="QXp1cmUlMkNTZWN1cml0eSUyQ01hbmFnZWQlMjBTZXJ2aWNlJTIwSWRlbnRpdGllcw==" data-listing-date-sort="1539558000000" data-listing-file-modified-sort="1759835491757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
         <div class="metadata">          
             <p class="date listing-date">October 15, 2018</p>
         </div>
@@ -1358,7 +1385,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="39" data-categories="QXp1cmUlMkNIb3N0aW5n" data-listing-date-sort="1534201200000" data-listing-file-modified-sort="1759844205684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+    <div class="blog-entry" data-index="40" data-categories="QXp1cmUlMkNIb3N0aW5n" data-listing-date-sort="1534201200000" data-listing-file-modified-sort="1759844205684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
         <div class="metadata">          
             <p class="date listing-date">August 14, 2018</p>
         </div>
@@ -1389,7 +1416,7 @@ window.Quarto = {
         
     </div>
     
-    <div class="blog-entry" data-index="40" data-categories="QXp1cmUlMkNIb3N0aW5nJTJDU3RhdGljJTIwV2Vic2l0ZXM=" data-listing-date-sort="1534201200000" data-listing-file-modified-sort="1759835491735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="474">
+    <div class="blog-entry" data-index="41" data-categories="QXp1cmUlMkNIb3N0aW5nJTJDU3RhdGljJTIwV2Vic2l0ZXM=" data-listing-date-sort="1534201200000" data-listing-file-modified-sort="1759835491735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="474">
         <div class="metadata">          
             <p class="date listing-date">August 14, 2018</p>
         </div>

@@ -1,22 +1,21 @@
 ---
-title: "Projects"
+title: "Current Backlog"
 author: "Gary Newport"
 description: ""
 id: todo
 listing:
   - id: todo
-    contents: 
-      - "todo.md"
-    template: ../html/Journal/listing.ejs
+    contents: "todo.md"
+    template: ../html/Current/todo.ejs
     categories: false 
   - id: posts
-    contents: "posts/*.md"
+    contents: "posts/*/index.qmd"
     sort: "date desc"
-    template: ../html/Journal/listing.ejs
-    categories: false
+    template: ../html/Current/listing.ejs
+    categories: true
 page-layout: full
-# toc-title: Year
-# toc-location: right
+toc-title: Year
+toc-location: right
 date-format: "MMMM D, YYYY"
 code-tools: false
 comments: false

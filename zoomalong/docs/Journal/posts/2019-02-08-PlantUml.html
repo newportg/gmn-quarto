@@ -102,8 +102,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../Current/index.html"> 
+<span class="menu-text">Current</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../Journal/index.html"> 
 <span class="menu-text">Journal</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Projects/index.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -181,11 +189,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Then paste the following into you Markup.</li>
 </ul>
 <p>PlantUML is a text descriptive language which gets converted into UML and other types of graphs So this :-</p>
-<pre class="plantuml"><code>@startuml
-
-Bob-&gt;Alice : hello
-
-@enduml</code></pre>
+<img src="2019-02-08-PlantUml_files\mediabag\e5104445cc9520cb54f5cd00204f8bb5ebf1c11f.svg" class="img-fluid">
 <p>would produce this :-</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
@@ -279,7 +283,7 @@ newportg/newportg.github.io/assets/Plantuml/test.puml)</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/newportg\.github\.io\/gmn-quarto\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

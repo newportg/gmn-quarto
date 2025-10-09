@@ -1,0 +1,26 @@
+---
+title: Test Inline PlantUML
+format: html
+---
+
+# Inline PlantUML test
+
+Inline block (source in file):
+
+```{.plantuml filename: "/images/FMHelloWorld.puml"}
+%% directive-only
+```
+
+Inline block (directive inside):
+
+```{.plantuml}
+%%| filename: /images/FMHelloWorld.puml
+```
+
+Inline block (inline !include expansion):
+
+```{.plantuml}
+@startuml
+!include /images/FMHelloWorld.puml
+@enduml
+```

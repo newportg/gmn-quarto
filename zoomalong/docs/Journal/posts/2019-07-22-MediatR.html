@@ -102,8 +102,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
+    <a class="nav-link" href="../../Current/index.html"> 
+<span class="menu-text">Current</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../Journal/index.html"> 
 <span class="menu-text">Journal</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Projects/index.html"> 
+<span class="menu-text">Projects</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -192,36 +200,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="margin-caption">Mediatr</figcaption>
 </figure>
 </div>
-<pre class="plantuml"><code>@startuml
-
-skinparam linetype polyline
-skinparam linetype ortho
-
-title Mediator Pattern
-
-' classes
-interface INotification 
-interface INotificationHandler
-INotification : mediate()
-INotificationHandler : NotifyText()
-NotificationMessage : NotifyText()
-Notifier1 : Handle()
-Notifier2 : Handle()
-INotifierMediatorService : NotifyText()
-
-' Set screen position
-INotification &lt;- INotificationHandler : mediator
-INotification -[hidden]-&gt; NotificationMessage
-
-' Relationship
-NotificationMessage --|&gt; INotification
-INotificationHandler &lt;|-- Notifier1
-INotificationHandler &lt;|-- Notifier2
-NotificationMessage -&gt; Notifier1
-NotificationMessage -&gt; Notifier2
-
-INotifierMediatorService &lt;|-- NotifierMediatorService
-@enduml</code></pre>
+<img src="2019-07-22-MediatR_files\mediabag\44105db474ccf98c7c9be6090e13c8d91f6f2d21.svg" class="img-fluid">
 <section id="definition" class="level1">
 <h1>Definition</h1>
 <p>Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.</p>
@@ -339,7 +318,7 @@ INotifierMediatorService &lt;|-- NotifierMediatorService
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/newportg\.github\.io\/gmn-quarto\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
