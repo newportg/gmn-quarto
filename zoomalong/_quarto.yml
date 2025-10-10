@@ -19,11 +19,11 @@ website:
       # - href: index.qmd
       #   text: Home
       - text: "Current"
-        href: Current/index.qmd      
+        href: Content/Current/index.qmd      
       - text: "Journal"
-        href: Journal/index.qmd
+        href: Content/Journal/index.qmd
       - text: "Projects"
-        href: Projects/index.qmd      
+        href: Content/Projects/index.qmd      
         
     right:
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"

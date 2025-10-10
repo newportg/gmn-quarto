@@ -1,6 +1,6 @@
 ---
 foam_template:
-  filepath: "/current/posts/${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}/index.qmd"
+  filepath: "/content/current/posts/${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}/index.qmd"
   description: "Daily note"
 layout: post
 title: Daily Note

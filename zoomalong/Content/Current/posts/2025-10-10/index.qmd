@@ -1,0 +1,37 @@
+---
+foam_template:
+  filepath: "/current/posts/2025-10-10/index.qmd"
+  description: "Daily note"
+layout: post
+title: Daily Note
+categories: [Daily Note]
+author: "Gary Newport"
+date: "2025-10-10"
+---
+
+# 2025-10-10
+
+- Quarto / Plantuml plugin
+  - The plugin currently doesnt support standard includes !include <azure/common> etc this needs to be fixed :(
+- Started a Quarto / TypeSpec plugin with copilot 
+  - Ran out of copilot tokens
+  - Aim was to create a fensed typespec element which would convert a typespec into a openapi/swagger html page
+- Land Registy
+  - Still not heard anything from Al concerning Nimbus
+    - [ ] If we go with Nimbus, which sounds likely as the cost is lower, we will have to rename the project.
+    - [ ] If we change the title to a different name, we should investigate using multiple services, so we can support Scotland and Northern Ireland and any other country as they come along.
+  - MyKf
+    - [ ] Investigate how MyKf will save the data in the hub db
+    - [ ] Investigate what MyKf will save in the database
+    - [X] Talk to Katy to find out who is the developer
+      - Rams Solaiappan
+- Quarto-Frontify
+  - [X] Created a Frontify Quarto Book
+  - [ ] Plantuml Diagrams 
+    - [X] Diagrams are loaded from files source
+    - [X] Any raw plantuml diagram 
+    - [ ] Any diagram that includes a !Include statement :(
+  - [X] Book loaded into GitHub
+  - [ ] Book published to GitHub Pages
+    - The Quarto Publish command produced errors :(
+    -  

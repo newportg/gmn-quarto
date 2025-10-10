@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Gary Newport">
 
-<title>Page not found! – Zoomalong</title>
+<title>gRPC – Zoomalong</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +21,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="/site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="/site_libs/quarto-nav/headroom.min.js"></script>
-<script src="/site_libs/clipboard/clipboard.min.js"></script>
-<script src="/site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="/site_libs/quarto-search/fuse.min.js"></script>
-<script src="/site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="/">
-<script src="/site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="/site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="/site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="/site_libs/quarto-html/popper.min.js"></script>
-<script src="/site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="/site_libs/quarto-html/anchor.min.js"></script>
-<link href="/site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/site_libs/quarto-html/quarto-syntax-highlighting-4c7b890cc350be7067044af900615741.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="/site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="/site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="/site_libs/bootstrap/bootstrap-aa68fb9c33ba8365830bc81446079ad7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="/site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="/site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<script src="/site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-4c7b890cc350be7067044af900615741.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-aa68fb9c33ba8365830bc81446079ad7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,23 +110,23 @@ ul.task-list li input[type="checkbox"] {
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background: #A52C60;
+        background: #170C3A;
       }
 </style>
 
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="/index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Zoomalong</span>
     </a>
   </div>
@@ -101,15 +137,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/Content/Current/index.html"> 
+    <a class="nav-link" href="../../../Content/Current/index.html"> 
 <span class="menu-text">Current</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/Content/Journal/index.html"> 
+    <a class="nav-link" href="../../../Content/Journal/index.html"> 
 <span class="menu-text">Journal</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/Content/Projects/index.html"> 
+    <a class="nav-link" href="../../../Content/Projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -134,17 +170,32 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Page not found!</h1>
-                      </div>
+      <h1 class="title">gRPC</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Patterns</div>
+              </div>
+                  </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Gary Newport </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Wednesday, October 16, 2019</p>
+      </div>
+    </div>
     
       
     </div>
@@ -152,8 +203,22 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#protocol-buffers" id="toc-protocol-buffers" class="nav-link" data-scroll-target="#protocol-buffers">Protocol Buffers</a></li>
+  <li><a href="#http2" id="toc-http2" class="nav-link" data-scroll-target="#http2">HTTP/2</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -161,10 +226,70 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="oh-noes" class="level3">
-<h3 class="anchored" data-anchor-id="oh-noes">oh noes! :(</h3>
-<p>The page or item that you’re looking for isn’t here!</p>
-<p>Try using the <i class="fa-solid fa-magnifying-glass" aria-label="magnifying-glass"></i> <strong>search button</strong> at the top of the page or <a href="https://www.google.com/search?q=site%3Azoomalong.co.uk" target="_blank">searching on Google.</a></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>This started out as a google project, hence the ‘g’, but the gRPC community is keen to distance itself from that. gRPC is quickly becoming a standard that getting wide adoption across the industry.</p>
+<p>gRPC makes use of the features of <a href="#HTTP/2">HTTP/2</a> such as protocol buffers to remotely calls methods deployed on other resources, such as other VM’s or on different cloud services.</p>
+<p>gRPC allows the developer to make calls to remote methods as if they are local resources, so there is no need for HTTP/REST infrastructure.</p>
+<p>gRPC uses <a href="#HTTP/2">HTTP/2</a> so takes advantage of the inbuilt TLS message security.</p>
+<p>gRPC is a protocol based service, where the user describes the methods, parameters and return objects, like swagger.</p>
+<p>gRPC application developer, working within a company, should develop a nuget client library, so the client developer doesn’t need to know that remote calls are happening.</p>
+<p>gRPC, Servers and Clients can be on vastly different architectures or environments.</p>
+</section>
+<section id="protocol-buffers" class="level1">
+<h1>Protocol Buffers</h1>
+<p>By default gRPC works with protocol buffers as originally defined by google, but its equally at home with JSON.</p>
+<p>If you use Protocol Buffers then you create a simple text file with a .proto extension,</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="er">syntax</span> <span class="er">=</span> <span class="er">"proto3";</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="er">service</span> <span class="er">Greeter</span> <span class="fu">{</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="er">rpc</span> <span class="er">SayHello</span> <span class="er">(HelloRequest)</span> <span class="er">returns</span> <span class="er">(HelloReply);</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="er">message</span> <span class="er">HelloRequest</span> <span class="fu">{</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="er">string</span> <span class="er">name</span> <span class="er">=</span> <span class="er">1;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="er">message</span> <span class="er">HelloReply</span> <span class="fu">{</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="er">string</span> <span class="er">message</span> <span class="er">=</span> <span class="er">1;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Then use the protoc compiler to generate data access classes in your desired language</p>
+</section>
+<section id="http2" class="level1">
+<h1>HTTP/2</h1>
+<ul>
+<li>Compress Headers - HPACK
+<ul>
+<li>Every HTTP request sends headers. HTTP/2 now compresses those headers reducing the package size</li>
+</ul></li>
+<li>Multiplexing
+<ul>
+<li>Web pages can contain 100s of resources, in previous versions of HTTP each resource had to be requested individually in sequential order. With HTTP/2 your requests will be non blocking.</li>
+</ul></li>
+<li>Supported by all major browsers
+<ul>
+<li>All major browsers support HTTP/2, but if your browser doesnt then the protocol will be downgraded to HTTP 1.1</li>
+</ul></li>
+</ul>
+</section>
+<section id="reference" class="level1">
+<h1>Reference</h1>
+<ul>
+<li>gRPC
+<ul>
+<li><a href="https://grpc.io/docs/guides/">gRPC.io</a></li>
+<li><a href="https://cloud.google.com/endpoints/docs/grpc/about-grpc">Google gRPC</a></li>
+<li><a href="https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-3.0">Microsoft gRPC</a></li>
+<li><a href="https://www.bing.com/videos/search?q=grpc&amp;view=detail&amp;mid=C7E6365D6E0295DF30D5C7E6365D6E0295DF30D5&amp;FORM=VIRE">YouTube - Blazor</a></li>
+</ul></li>
+<li>HTTP/2
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/HTTP/2">WikiPedia HTTP/2</a></li>
+<li><a href="https://developers.google.com/web/fundamentals/performance/http2/">Google HTTP/2</a></li>
+<li><a href="https://http2.github.io/">IETF HTTP Working Group</a></li>
+<li><a href="https://www.bing.com/videos/search?q=http2&amp;view=detail&amp;mid=549AB50BE0608DC48D04549AB50BE0608DC48D04&amp;FORM=VIRE">YouTube - HTTP/2</a></li>
+</ul></li>
+</ul>
 
 
 </section>
