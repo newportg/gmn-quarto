@@ -1,0 +1,31 @@
+---
+foam_template:
+  filepath: "/content/current/posts/2025-10-13/index.qmd"
+  description: "Daily note"
+layout: post
+title: Daily Note
+categories: [Daily Note]
+author: "Gary Newport"
+date: "2025-10-13"
+---
+
+# 2025-10-13
+
+- Diabetes
+  - [X] Holiday Letter
+  - [X] X-pert Online Course
+  - [X] NHS Online Course https://app.changinghealth.com
+  - Had a look for insulin travel bag
+- [X] GP Appointment review
+    - Was Diabetic review with the nurse
+    - Nurse took blood for chloesterol
+    - Cancelled and rebooked Blood Test with St Peters this time.
+- [ ] Need more metformin only supplied 28 tablets/ prescription requested 56 ?
+  - [ ] Sent email to FastHeal 
+- [X] Quarto Had another go at getting plantuml to work, No joy :(
+  - [X] Installed java
+  - [X] Downloaded plantuml.jar
+  - [X] Set env variable PLANTUML_JAR to point to jar file
+  - [X] Tried to render a quarto doc with plantuml code block
+  - [X] Still get error "pandoc-ext\diagram\diagram.lua: c:\plantuml: createProcess: permission denied"
+  - [ ] Next step try from command line ?)   

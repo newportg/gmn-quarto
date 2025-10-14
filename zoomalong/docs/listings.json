@@ -1,20 +1,5 @@
 [
   {
-    "listing": "/Content/Projects/index.html",
-    "items": [
-      "/Content/Projects/posts/Frontify.html"
-    ]
-  },
-  {
-    "listing": "/Content/Current/index.html",
-    "items": [
-      "/Content/Current/todo.html",
-      "/Content/Current/posts/2025-10-10/index.html",
-      "/Content/Current/posts/2025-10-09/index.html",
-      "/Content/Current/posts/2025-10-08/index.html"
-    ]
-  },
-  {
     "listing": "/Content/Journal/index.html",
     "items": [
       "/Content/Journal/posts/2025-10-09-changes.html",
@@ -59,6 +44,22 @@
       "/Content/Journal/posts/2018-10-15-AzureFunctionManagedServiceIdentities.html",
       "/Content/Journal/posts/2018-08-14-AzureApplicationHosting.html",
       "/Content/Journal/posts/2018-08-14-Hosting AzureStaticWebsites.html"
+    ]
+  },
+  {
+    "listing": "/Content/Current/index.html",
+    "items": [
+      "/Content/Current/todo.html",
+      "/Content/Current/posts/2025-10-13/index.html",
+      "/Content/Current/posts/2025-10-10/index.html",
+      "/Content/Current/posts/2025-10-09/index.html",
+      "/Content/Current/posts/2025-10-08/index.html"
+    ]
+  },
+  {
+    "listing": "/Content/Projects/index.html",
+    "items": [
+      "/Content/Projects/posts/Frontify.html"
     ]
   }
 ]

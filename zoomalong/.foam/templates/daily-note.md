@@ -11,3 +11,5 @@ date: "${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}"
 
 # ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}
 
+- Diabetes
+  - [ ] NHS Online Course https://app.changinghealth.com

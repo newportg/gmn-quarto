@@ -2,9 +2,9 @@
 <div class="list blog">
     <% for (const post of items) { %>
     <div class="blog-entry" <%= metadataAttrs(post) %>>
-        <!-- <div class="metadata">          
+        <div class="metadata">          
             <p class="date listing-date"><%= post.date %></p>
-        </div> -->
+        </div>
         <div class="body">
             <p class="title listing-title"><a href="<%- post.path %>"><%= post.date %></a></p>
 

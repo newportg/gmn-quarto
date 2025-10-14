@@ -1,0 +1,27 @@
+---
+foam_template:
+  filepath: "/content/current/posts/2025-10-14/index.qmd"
+  description: "Daily note"
+layout: post
+title: Daily Note
+categories: [Daily Note]
+author: "Gary Newport"
+date: "2025-10-14"
+---
+
+# 2025-10-14
+
+- Diabetes
+  - [ ] NHS Online Course https://app.changinghealth.com
+- Quarto
+  - [X] Created a LUA PlantUML filter for Quarto 
+  - [X] Accepts a Puml file as a attribute
+  - [X] Accepts inline PlantUML code
+    - [X] Creates a local puml file if inline code is used
+  - [X] Renders the PlantUML diagram as SVG
+  - [X] Renders puml files in the current directory. 
+  - [ ] Works with subdirectories
+  - [ ] Cannot direct where to store the generated SVG files
+  - [ ] Create a GitHub repo for the filter
+  - [ ] Publish to Quarto extensions
+  - [ ] Document the filter as a journal entry
