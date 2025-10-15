@@ -66,8 +66,7 @@ diagram:
       execpath: "C:/Plantuml/plantuml.bat"
 
 filters:
-  - C:/Users/NEWPORTG/source/Personal/gmn-quarto/zoomalong/_filters/inline-plantuml-input.lua
-  - C:/Users/NEWPORTG/source/Personal/gmn-quarto/zoomalong/_extensions/pandoc-ext/diagram/diagram.lua
+  - plantuml-diagram
 
 
 

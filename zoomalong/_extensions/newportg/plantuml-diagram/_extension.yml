@@ -1,0 +1,8 @@
+title: Plantuml-diagram
+author: Gary Newport
+version: 1.0.0
+quarto-required: ">=1.8.0"
+contributes:
+  filters:
+    - plantuml-diagram.lua
+

@@ -11,13 +11,15 @@ date: "2025-10-09"
 
 # inline script
 
-```plantuml
+```{.plantuml}
 @startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
 Alice -> Bob: Another authentication Request
 Bob --> Alice: Another Response
 @enduml
+```
+```{.plantuml pumlfile: "/images/FMHelloWorld"}
 ```
 
 # external file script 

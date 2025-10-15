@@ -50,6 +50,8 @@
     "listing": "/Content/Current/index.html",
     "items": [
       "/Content/Current/todo.html",
+      "/Content/Current/posts/2025-10-15/index.html",
+      "/Content/Current/posts/2025-10-14/index.html",
       "/Content/Current/posts/2025-10-13/index.html",
       "/Content/Current/posts/2025-10-10/index.html",
       "/Content/Current/posts/2025-10-09/index.html",

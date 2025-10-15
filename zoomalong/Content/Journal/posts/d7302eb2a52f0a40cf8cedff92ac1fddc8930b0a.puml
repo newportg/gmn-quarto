@@ -1,0 +1,30 @@
+@startuml
+
+skinparam linetype polyline
+skinparam linetype ortho
+
+title Mediator Pattern
+
+' classes
+interface INotification 
+interface INotificationHandler
+INotification : mediate()
+INotificationHandler : NotifyText()
+NotificationMessage : NotifyText()
+Notifier1 : Handle()
+Notifier2 : Handle()
+INotifierMediatorService : NotifyText()
+
+' Set screen position
+INotification <- INotificationHandler : mediator
+INotification -[hidden]-> NotificationMessage
+
+' Relationship
+NotificationMessage --|> INotification
+INotificationHandler <|-- Notifier1
+INotificationHandler <|-- Notifier2
+NotificationMessage -> Notifier1
+NotificationMessage -> Notifier2
+
+INotifierMediatorService <|-- NotifierMediatorService
+@enduml
