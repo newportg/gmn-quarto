@@ -1,0 +1,26 @@
+---
+foam_template:
+  filepath: "/content/current/posts/2025-10-16/index.qmd"
+  description: "Daily note"
+layout: post
+title: Daily Note
+categories: [Daily Note]
+author: "Gary Newport"
+date: "2025-10-16"
+---
+
+# 2025-10-16
+
+- Diabetes
+  - [ ] NHS Online Course https://app.changinghealth.com
+- [ ] API Pipeline 
+  - [X] Create a Journal page to document the process
+  - [ ] Investigate the TypeSpec process
+  - [ ] Investigate the AutoRest process
+  - [ ] Create a End to End example
+    - [ ] Create a GitHub repo to hold the example
+    - [ ] Publish the example to GitHub
+  - [ ] Create a Quarto filter to automate the process
+    - [ ] Create a GitHub repo to hold the filter
+    - [ ] Publish the filter to Quarto extensions
+    - [ ] Document the filter as a journal entry

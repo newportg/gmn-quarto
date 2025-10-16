@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="floating nav-fixed slimcontent quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -188,18 +188,12 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><img src="http://www.plantuml.com/plantuml/proxy?cache=no&amp;src=https://raw.github.com/newportg/newportg.github.io/master/assets/Mediatr/Mediatr.puml" class="img-fluid figure-img"></p>
-<figcaption class="margin-caption">Mediatr</figcaption>
-</figure>
-</div>
 <p><img src="d7302eb2a52f0a40cf8cedff92ac1fddc8930b0a.svg" class="img-fluid" alt="PlantUML Diagram"></p>
 <section id="definition" class="level1">
 <h1>Definition</h1>
@@ -318,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/newportg\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

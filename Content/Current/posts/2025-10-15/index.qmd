@@ -14,8 +14,13 @@ date: "2025-10-15"
 - Diabetes
   - [X] NHS Online Course https://app.changinghealth.com
 - [ ] Quarto PlantUML filter
-  - [X] Create a GitHub repo for the filter
+  - [X] Create a GitHub repo for the filte
   - [X] Publish to Quarto extensions
-  - [ ] Document the filter as a journal entry
-  - [ ] Works with subdirectories
+  - [X] Document the filter as a journal entry
+  - [ ] Place all output files in a particular subdirectory  
+      Quarto and LUA processing executes relative to the location of the .qmd file. So we will need a method to identify which directory we are in so we can then redirect the output files to a specified subdirectory.
   - [ ] Echo script rather than create puml file.
+      Executing a 'Echo' command terminates when it reaches a line break. So we will need to replace all line breaks with a special character sequence, e.g. '\n' and then use a script to replace the special character sequence with a line break.
+      Currently the directory is littered with intermediate .puml files which are not needed once the diagram has been created.
+
+    

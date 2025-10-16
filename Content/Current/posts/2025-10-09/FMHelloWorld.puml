@@ -1,4 +1,4 @@
-@startuml Function Monkey
+@startuml
 
 skinparam linetype polyline
 skinparam linetype ortho

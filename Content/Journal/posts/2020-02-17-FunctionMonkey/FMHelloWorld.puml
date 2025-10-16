@@ -1,0 +1,48 @@
+@startuml
+
+skinparam linetype polyline
+skinparam linetype ortho
+
+class HelloWorldCommandValidator {
+    + HelloWorldCommandValidator()
+}
+class "AbstractValidator`1"<T> {
+}
+"AbstractValidator`1" "<HelloWorldCommand>" <|-- HelloWorldCommandValidator
+
+class HelloWorldCommand {
+    + Name : string <<get>> <<set>>
+}
+class "ICommand`1"<T> {
+}
+"ICommand`1" "<string>" <|-- HelloWorldCommand
+
+class HelloWorldCommandHandler {
+    + HelloWorldCommandHandler(stringHasher:IStringHasher)
+    + ExecuteAsync(command:HelloWorldCommand, previousResult:string) : Task<string>
+}
+class "ICommandHandler`2"<T1,T2> {
+}
+"ICommandHandler`2" "<HelloWorldCommand,string>" <|-- HelloWorldCommandHandler
+HelloWorldCommandHandler --> "_stringHasher" IStringHasher
+
+' Set screen position
+"ICommand`1" <- "ICommandHandler`2" : mediator
+HelloWorldCommand -> HelloWorldCommandHandler
+HelloWorldCommand -left> HelloWorldCommandValidator
+
+interface IStringHasher {
+    Hash(value:string) : string
+}
+
+class StringHasher {
+    + Hash(value:string) : string
+}
+IStringHasher <|-- StringHasher
+
+class FunctionAppConfiguration {
+    + Build(builder:IFunctionHostBuilder) : void
+}
+IFunctionAppConfiguration <|-- FunctionAppConfiguration
+
+@enduml

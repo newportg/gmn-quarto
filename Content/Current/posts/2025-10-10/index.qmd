@@ -34,4 +34,4 @@ date: "2025-10-10"
   - [X] Book loaded into GitHub
   - [ ] Book published to GitHub Pages
     - The Quarto Publish command produced errors :(
-    -  
+  

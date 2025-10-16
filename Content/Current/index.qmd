@@ -4,16 +4,25 @@ author: "Gary Newport"
 description: ""
 id: todo
 listing:
+  # - id: todo
+  #   contents: "todo.md"
+  #   # template: ../../html/Current/todo.ejs
+  #   categories: false 
+  # - id: posts
+  #   contents: "posts/*/index.qmd"
+  #   sort: "date desc"
+  #   # template: ../../html/Current/listing.ejs
+  #   categories: true
   - id: todo
     contents: "todo.md"
-    template: ../../html/Current/todo.ejs
-    categories: false 
+    type: table
   - id: posts
     contents: "posts/*/index.qmd"
     sort: "date desc"
-    template: ../../html/Current/listing.ejs
-    categories: true
-page-layout: full
+    type: table
+    fields: [date, title]
+
+# page-layout: default
 toc-title: Year
 toc-location: right
 date-format: "MMMM D, YYYY"

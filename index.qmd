@@ -18,13 +18,12 @@ id: ppc
 ---
 
 
+:::{#ppc}
 This is a Quarto website.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 
-:::{#ppc}
-I love cats
 
 ```{=html}
 <img src=".\images\mbcs-badge.png" alt="MBCS" style="width:144px;height:144px;">

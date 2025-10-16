@@ -1,0 +1,18 @@
+@startuml 
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/EIP-PlantUML/main/dist/EIP-PlantUML.puml
+
+LAYOUT_LEFT_RIGHT()
+
+title EIP Content Based Routing
+
+Message( msgI, "Message Data")
+rectangle "Dynamic Rulebase" as rulebase
+DynamicRouter( routing, "Router", rulebase)
+MsgChannel( qa, "Queue A")
+MsgChannel( qb, "Queue B")
+
+msgI --> routing
+routing --> qa
+routing --> qb
+
+@enduml

@@ -1,7 +1,30 @@
 [
   {
+    "listing": "/Content/Projects/index.html",
+    "items": [
+      "/Content/Projects/posts/Frontify.html"
+    ]
+  },
+  {
+    "listing": "/Content/Current/index.html",
+    "items": [
+      "/Content/Current/todo.html",
+      "/Content/Current/posts/2025-10-16/index.html",
+      "/Content/Current/posts/2025-10-15/index.html",
+      "/Content/Current/posts/2025-10-14/index.html",
+      "/Content/Current/posts/2025-10-13/index.html",
+      "/Content/Current/posts/2025-10-10/index.html",
+      "/Content/Current/posts/2025-10-09/index.html",
+      "/Content/Current/posts/2025-10-08/index.html"
+    ]
+  },
+  {
     "listing": "/Content/Journal/index.html",
     "items": [
+      "/Content/Journal/posts/2025-10-16/tspexample/tsp-output/server/aspnet/docs/emitter.html",
+      "/Content/Journal/posts/2025-10-16/tspexample/tsp-output/server/aspnet/docs/usage.html",
+      "/Content/Journal/posts/2025-10-16/index.html",
+      "/Content/Journal/posts/2025-10-16/TypeSpec.html",
       "/Content/Journal/posts/2025-10-09-changes.html",
       "/Content/Journal/posts/2025-09-26-Diabetes.html",
       "/Content/Journal/posts/2025-05-01-TestingAzureFunctions.html",
@@ -19,15 +42,15 @@
       "/Content/Journal/posts/2020-11-19-AdaptiveCard.html",
       "/Content/Journal/posts/2022-07-20-AzurePipelineGitCommit.html",
       "/Content/Journal/posts/2020-06-19-AzureFunctionsLogging.html",
-      "/Content/Journal/posts/2020-02-17-FunctionMonkey.html",
+      "/Content/Journal/posts/2020-02-17-FunctionMonkey/index.html",
       "/Content/Journal/posts/2020-01-09-Rules.html",
       "/Content/Journal/posts/2019-12-01-Item.html",
       "/Content/Journal/posts/2019-10-16-gRPC.html",
-      "/Content/Journal/posts/2019-08-08-EIP-ContentBasedRouting.html",
+      "/Content/Journal/posts/2019-08-08-EIP-ContentBasedRouting/index.html",
       "/Content/Journal/posts/2019-08-08-Loqate.html",
       "/Content/Journal/posts/2019-07-31-SAS-StorageAccountAccess.html",
       "/Content/Journal/posts/2019-07-25-Documentation.html",
-      "/Content/Journal/posts/2019-07-22-MediatR.html",
+      "/Content/Journal/posts/2019-07-22-MediatR/index.html",
       "/Content/Journal/posts/2019-07-16-AzureFunctionDI.html",
       "/Content/Journal/posts/2019-07-16-FluentAsserts.html",
       "/Content/Journal/posts/2019-07-16-IFrames.html",
@@ -44,24 +67,6 @@
       "/Content/Journal/posts/2018-10-15-AzureFunctionManagedServiceIdentities.html",
       "/Content/Journal/posts/2018-08-14-AzureApplicationHosting.html",
       "/Content/Journal/posts/2018-08-14-Hosting AzureStaticWebsites.html"
-    ]
-  },
-  {
-    "listing": "/Content/Current/index.html",
-    "items": [
-      "/Content/Current/todo.html",
-      "/Content/Current/posts/2025-10-15/index.html",
-      "/Content/Current/posts/2025-10-14/index.html",
-      "/Content/Current/posts/2025-10-13/index.html",
-      "/Content/Current/posts/2025-10-10/index.html",
-      "/Content/Current/posts/2025-10-09/index.html",
-      "/Content/Current/posts/2025-10-08/index.html"
-    ]
-  },
-  {
-    "listing": "/Content/Projects/index.html",
-    "items": [
-      "/Content/Projects/posts/Frontify.html"
     ]
   }
 ]

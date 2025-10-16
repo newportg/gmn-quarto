@@ -19,40 +19,7 @@ Alice -> Bob: Another authentication Request
 Bob --> Alice: Another Response
 @enduml
 ```
-```{.plantuml pumlfile: "/images/FMHelloWorld"}
+
+```{.plantuml pumlfile="FMHelloWorld"}
 ```
 
-# external file script 
-
-```plantuml
-%%| filename: [/images/FMHelloWorld.puml](http://_vscodecontentref_/17)
-```
-
-```{.plantuml filename: "/images/FMHelloWorld.puml"}
-```
-
-```{.plantuml filename: "/images/FMHelloWorld.puml"}
-%% directive-only
-```
-
-## Inline PlantUML filter (project configuration)
-
-This project includes a small preprocessor filter that lets you reference external PlantUML `.puml` files from `plantuml` code blocks.
-
-- Filter location: `_filters/inline-plantuml-input.lua`
-- How to reference an external file:
-  - As a block attribute: ```{.plantuml filename: "/images/foo.puml"}```
-  - As a single-line directive inside the block: place a line like `%%| filename: /images/foo.puml` as the only content of the block.
-- Leading-slash paths such as `/images/foo.puml` are treated as project-root relative. Absolute (drive-letter) paths and `file://` URIs are also supported.
-
-- The filter expands `!include` directives recursively and strips the filename directive lines before passing PlantUML to the renderer. It will wrap the contents with `@startuml`/`@enduml` if missing.
-
-- Debugging: set the environment variable `INLINE_PLANTUML_DEBUG=1` when running `quarto render` to enable diagnostic output. When enabled the filter:
-  - Prints discoverable lines in the Quarto log (e.g. `INLINE-PLANTUML-RESOLVED`, `INLINE-PLANTUML-WRITE-TO`).
-  - Writes the inlined PlantUML to `.quarto/inline-plantuml-dump-FINDME.puml` and a TEMP copy for inspection.
-
-- Test assets and scripts (added to the repo):
-  - `tests/test-inline-plantuml.qmd` — a tiny test page demonstrating attribute, directive and `!include` usage.
-  - `scripts/smoke-test-inline-plantuml.ps1` — PowerShell script that runs the test page in debug mode and checks for the dump file.
-
-If you'd like, I can also add a short note to the top-level README explaining how to enable debug dumps when troubleshooting diagrams.
